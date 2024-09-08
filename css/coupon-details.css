@@ -90,7 +90,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 10000000;
-
+    background: white;
     padding-top: 40px;
 }
 
@@ -745,7 +745,7 @@ button img {
 
     .section-two-img-two {
         display: block;
-        width: 158px;
+        width: 130px;
     }
 
     .anotdark {

@@ -178,36 +178,40 @@ document.addEventListener("DOMContentLoaded", async function () {
                 </button>
               </div>
             </div>
-            <div id="capture" style="padding: 10px; background:white">
-              <div class="my_border text-center" id="border">
+               <div id="capture" style="padding: 10px; background:white">
+            <div class="my_border text-center" id="border">
                 <h3 class="pt-5 p-2">خصم رهيب من ${coupon.title}</h3>
                 <div class="container text-center">
-                  <div class="row align-items-center justify-content-center mt-5 mb-5">
-                    <div class="my_border_img">
-                      <img src="${coupon.image}" alt="">
+                    <div class="row align-items-center justify-content-center mt-5 mb-5">
+                        <div class="my_border_img">
+                            <img src="${coupon.image}" alt="">
+                        </div>
+                        <h3 class="m-3"><i class="fa-solid fa-xmark"></i></h3>
+                        <div class="my_border_img_qass">
+                            <img src="./images/logo.png" alt="">
+                        </div>
                     </div>
-                    <h3 class="m-3"><i class="fa-solid fa-xmark"></i></h3>
-                    <div class="my_border_img_qass">
-                      <img src="./images/logo.png" alt="">
+                    <h4>متوفر الحين في قسيمة</h4>
+                    <h6 class="mt-5">الحصريات لعبتنا حمّل تطبيقنا وخليك مميز!</h6>
+                    <div class="container justify-content-center mt-3 mb-5">
+                        <div class="row justify-content-center">
+
+                            <a class="ml-1" href="">
+                                <img class="img-fluid section-two-img-one" src="./images/app-store.png" alt="">
+                                <img class="img-fluid section-two-img-two" src="./images/app-store-mobile.svg" alt="">
+                            </a>
+
+
+                            <a class="mr-1" href="">
+                                <img class="img-fluid section-two-img-one" src="./images/google-play.png" alt="">
+                                <img class="img-fluid section-two-img-two" src="./images/google-play-mobile.svg" alt="">
+                            </a>
+
+                        </div>
                     </div>
-                  </div>
-                  <h4>متوفر الحين في قسيمة</h4>
-                  <h6 class="mt-5">الحصريات لعبتنا حمّل تطبيقنا وخليك مميز!</h6>
-                  <div class="container justify-content-center mt-3 mb-5">
-                    <div class="row justify-content-center">
-                      <a class="ml-1" href="">
-                        <img class="img-fluid section-two-img-one" src="./images/app-store.png" alt="">
-                        <img class="img-fluid section-two-img-two" src="./images/app-store-mobile.svg" alt="">
-                      </a>
-                      <a class="mr-1" href="">
-                        <img class="img-fluid section-two-img-one" src="./images/google-play.png" alt="">
-                        <img class="img-fluid section-two-img-two" src="./images/google-play-mobile.svg" alt="">
-                      </a>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
+        </div>
             <div class="text-start editor_section mt-5 mb-5">
               ${coupon.items_description_pages.editor_section.ar}
             </div>

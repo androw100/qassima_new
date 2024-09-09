@@ -517,7 +517,7 @@ button img {
 }
 
 .details {
-    display: none;
+    display: block;
     margin-top: 10px;
     min-height: 130px;
     background: #fff;

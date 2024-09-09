@@ -146,14 +146,15 @@ document.addEventListener("DOMContentLoaded", async function () {
               <div class="option p-3 mt-3">
                 <ul class="d-flex text-center align-items-center justify-content-center">
                   <li class="text-center">
-                    <button class="btn" id="toggle-button-${coupon.id}" onclick="toggleDetails(${coupon.id})">
-                      <img id="toggle-icon-${coupon.id}" src="./images/down.svg" alt="عرض المزيد">
-                    </button>
+ <button class="btn" id="toggle-button-${coupon.id}" onclick="toggleDetails(${coupon.id})">
+  <img id="toggle-icon-${coupon.id}" src="./images/up.svg" alt="عرض أقل">
+</button>
+
                   </li>
                 </ul>
               </div>
             </div>
-            <div id="details-${coupon.id}" class="details" style="display: none;">
+            <div id="details-${coupon.id}" class="details" >
               <div class="container text-center">
                 <p class="pt-3">${coupon.description}</p>
 <div class="container text-center">
@@ -305,12 +306,12 @@ function toggleDetails(id) {
   const details = document.getElementById(`details-${id}`);
   const toggleIcon = document.getElementById(`toggle-icon-${id}`);
 
-  if (details.style.display === "none") {
-    details.style.display = "block";
+  if (details.style.display === "block") {
+    details.style.display = "none";
     toggleIcon.src = "./images/up.svg"; // استبدال السهم إلى أعلى
     toggleIcon.alt = "عرض أقل";
   } else {
-    details.style.display = "none";
+    details.style.display = "block";
     toggleIcon.src = "./images/down.svg"; // استبدال السهم إلى أسفل
     toggleIcon.alt = "عرض المزيد";
   }

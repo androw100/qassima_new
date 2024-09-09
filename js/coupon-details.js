@@ -156,19 +156,20 @@ document.addEventListener("DOMContentLoaded", async function () {
             <div id="details-${coupon.id}" class="details" style="display: none;">
               <div class="container text-center">
                 <p class="pt-3">${coupon.description}</p>
-                <div class="container text-center">
-                  <div class="row align-items-center d-flex">
-                    <div class="col-8 m-1 mb-3 copy">
-                      <img class="img-fluid m-1" src="./images/teckit.svg" alt="">
-                      انسخ الكود من التطبيق
-                    </div>
-                    <div class="col-3 m-1 mb-3 copy">
-                      <a href="${coupon.url}">
-                        <i class="fa-solid fa-cart-shopping m-3"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+<div class="container text-center">
+    <div class="row align-items-center d-flex">
+        <div class="col-8 m-1 mb-3 copy">
+            <a href="http://Onelink.to/qasimahapp">
+                <img class="img-fluid m-1" src="./images/teckit.svg" alt="">
+                انسخ الكود من التطبيق</a>
+        </div>
+        <div class="col-3 m-1 mb-3 copy">
+            <a href="${coupon.url}">
+                <i class="fa-solid fa-cart-shopping m-3"></i>
+            </a>
+        </div>
+    </div>
+</div>
               </div>
             </div>
             <div class="row mt-3 justify-content-center">
@@ -196,13 +197,13 @@ document.addEventListener("DOMContentLoaded", async function () {
                     <div class="container justify-content-center mt-3 mb-5">
                         <div class="row justify-content-center">
 
-                            <a class="ml-1" href="">
+                            <a class="ml-1" href="http://Onelink.to/qasimahapp">
                                 <img class="img-fluid section-two-img-one" src="./images/app-store.png" alt="">
                                 <img class="img-fluid section-two-img-two" src="./images/app-store-mobile.svg" alt="">
                             </a>
 
 
-                            <a class="mr-1" href="">
+                            <a class="mr-1" href="http://Onelink.to/qasimahapp">
                                 <img class="img-fluid section-two-img-one" src="./images/google-play.png" alt="">
                                 <img class="img-fluid section-two-img-two" src="./images/google-play-mobile.svg" alt="">
                             </a>

@@ -203,12 +203,49 @@
         // استرجاع الـ id من localStorage
         const blogId = localStorage.getItem('selectedBlogId');
 
+        // async function fetchBlogDetails(id) {
+        //     try {
+        //         const response = await fetch(`https://qasimahapp.com/api/blog/${id}`);
+        //         if (!response.ok) {
+        //             throw new Error("Network response was not ok " + response.statusText);
+        //         }
+        //         // قراءة النص بدلاً من JSON مباشرة
+        //         const text = await response.text();
+
+        //         // محاولة تحويل النص إلى JSON
+        //         try {
+        //             const data = JSON.parse(text);
+        //             if (data && data.data) {
+        //                 displayBlogDetails(data.data);
+        //             } else {
+        //                 console.error("No data found in response");
+        //             }
+        //         } catch (jsonError) {
+        //             // إذا فشل التحويل إلى JSON، اعرض النص كما هو
+        //             document.getElementById('blog-details').innerText = "Received non-JSON response.";
+        //             console.error("Error parsing JSON:", jsonError);
+        //         }
+        //     } catch (error) {
+        //         console.error("Error fetching blog details:", error);
+        //         document.getElementById('blog-details').innerText = "Error loading blog details.";
+        //     }
+        // }
         async function fetchBlogDetails(id) {
             try {
-                const response = await fetch(`https://qasimahapp.com/api/blog/${id}`);
+                // إنشاء URL مع المعلمة all_langs في params
+                const url = new URL(`https://qasimahapp.com/api/blog/${id}`);
+                url.searchParams.append("all_langs", "ar"); // إضافة المعلمة all_langs بالقيمة ar
+
+                const response = await fetch(url, {
+                    headers: {
+                        "Accept-Language": "ar", // هنا يمكنك تحديد اللغة
+                    },
+                });
+
                 if (!response.ok) {
                     throw new Error("Network response was not ok " + response.statusText);
                 }
+
                 // قراءة النص بدلاً من JSON مباشرة
                 const text = await response.text();
 
@@ -235,9 +272,9 @@
             const blogDetailsElement = document.getElementById("blog-details");
             if (blogDetailsElement) {
                 blogDetailsElement.innerHTML = `
-                    <h1>${blog.title}</h1>
+                    <h5 class="m-5 text-center">${blog.title_ar}</h5>
                     <img src="${blog.image}" class="img-fluid" alt="${blog.title}" />
-                    <p>${blog.notes}</p>
+                    <p>${blog.notes_ar}</p>
                 `;
             } else {
                 console.error('Element with id "blog-details" not found');

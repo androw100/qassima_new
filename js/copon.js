@@ -196,8 +196,9 @@ function displayCoupons(coupons) {
                                     <div class="container text-center">
                                         <div class="row align-items-center d-flex">
                                             <div class="col-8 m-1 mb-3 copy">
-                                                <img class="img-fluid m-1" src="./images/teckit.svg" alt="">
-                                                انسخ الكود من التطبيق
+ <a href="http://Onelink.to/qasimahapp">
+                <img class="img-fluid m-1" src="./images/teckit.svg" alt="">
+                انسخ الكود من التطبيق</a>                                                
                                             </div>
                                             <div class="col-3 m-1 mb-3 copy">
                                             <a href="${coupon.url}">

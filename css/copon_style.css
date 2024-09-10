@@ -799,14 +799,19 @@ button img {
     }
 
     .copon-img {
-        margin: 16px;
+        /* margin: 16px; */
         /* height: 56px !important;
         width: 56px !important; */
         border-radius: 50%;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+        width: 60px !important;
+        max-width: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
 
+        margin-top: 0px;
     }
 
     .copon-img img {
@@ -814,6 +819,10 @@ button img {
         width: 56px !important;
 
         border: 0.25px solid #A9A9A9;
+    }
+
+    .main-name-copon {
+        width: 150px;
     }
 
     .main-name-copon h3 {
